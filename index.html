@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización - Primavera Events Group</title>
+    <meta name="description" content="Propuesta de Servicio Premium: Evento para 80 invitados. Atención: Sra. Sandra. Primavera Events Group.">
+    
+    <!-- Open Graph / Meta Tags para Enlaces (WhatsApp, Facebook, etc) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://5410m0n0c001.github.io/-Sra.-Sandra-cotizaci-n/">
+    <meta property="og:title" content="Cotización de Evento - Primavera Events Group">
+    <meta property="og:description" content="Propuesta de Servicio Premium: Evento para 80 invitados. Atención: Sra. Sandra.">
+    <meta property="og:image" content="https://5410m0n0c001.github.io/-Sra.-Sandra-cotizaci-n/portada.png">
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://5410m0n0c001.github.io/-Sra.-Sandra-cotizaci-n/">
+    <meta property="twitter:title" content="Cotización de Evento - Primavera Events Group">
+    <meta property="twitter:description" content="Propuesta de Servicio Premium: Evento para 80 invitados. Atención: Sra. Sandra.">
+    <meta property="twitter:image" content="https://5410m0n0c001.github.io/-Sra.-Sandra-cotizaci-n/portada.png">
+    
+    <!-- Google Fonts for Editorial Luxury -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Primavera Official Branding: Luxury + Soft Minimal + Wedding Editorial */
+            --primary-pink: #F65C7A;
+            --primary-light: #FF8FA3;
+            --primary-dark: #1F1F1F;
+            --background-light: #F8F6F4;
+            --white: #FFFFFF;
+            --soft-pink: #FADADD;
+            --beige: #EFE7E1;
+            --gold-accent: #C9A96E;
+            --gray-text: #6D6D6D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-light);
+            color: var(--primary-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 50vh;
+            min-height: 350px;
+            background-image: url('portada.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: var(--white);
+            z-index: 1;
+            padding: 0 20px;
+            animation: fadeInDown 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--soft-pink);
+            margin-top: 10px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: -60px auto 60px;
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .quote-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 50px;
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s both;
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--beige);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-main h2 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            line-height: 1.2;
+        }
+
+        .header-main p {
+            font-size: 1.1rem;
+            color: var(--gray-text);
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .badge-people {
+            display: inline-block;
+            background: var(--soft-pink);
+            color: var(--primary-pink);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .date-box {
+            text-align: right;
+            background: var(--background-light);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid var(--beige);
+        }
+
+        .date-box span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gray-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .date-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            font-family: 'Playfair Display', serif;
+            margin-top: 3px;
+        }
+
+        /* Includes Section */
+        .section-title {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title i {
+            color: var(--primary-pink);
+            font-size: 1.2rem;
+        }
+
+        .includes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 45px;
+        }
+
+        .include-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: var(--white);
+            border: 1px solid var(--beige);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .include-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Soft shadows hover */
+            border-color: var(--soft-pink);
+        }
+
+        .include-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--soft-pink);
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+            box-shadow: inset 0 0 0 1px rgba(246, 92, 122, 0.1);
+        }
+
+        .include-item:hover .include-icon {
+            background: var(--primary-pink);
+            color: var(--white);
+        }
+
+        .include-text h4 {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--primary-dark);
+        }
+
+        .include-text p {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            line-height: 1.5;
+        }
+
+        /* Pricing Table */
+        .pricing-container {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--beige);
+            margin-bottom: 35px;
+            background: var(--white);
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .pricing-table thead {
+            background: var(--background-light);
+            border-bottom: 1px solid var(--beige);
+        }
+
+        .pricing-table th {
+            font-weight: 500;
+            color: var(--gray-text);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-table td {
+            border-bottom: 1px solid var(--beige);
+        }
+
+        .pricing-table td.amount {
+            text-align: right;
+            font-weight: 500;
+            color: var(--primary-dark);
+        }
+
+        .pricing-table th.amount-head {
+            text-align: right;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .item-title {
+            font-weight: 500;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: var(--gray-text);
+        }
+
+        .total-row {
+            background: var(--background-light) !important;
+        }
+
+        .total-row td {
+            padding: 25px 20px;
+            border-top: 1px solid var(--beige);
+        }
+
+        .total-row td:first-child {
+            text-align: right;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+        }
+
+        .total-row td.amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-pink);
+            border-bottom: none;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid var(--beige);
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 25px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #F65C7A, #FF8FA3);
+            color: white;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 20px rgba(246, 92, 122, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+            color: white;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--gray-text);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 0 20px 40px;
+            color: var(--gray-text);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero { height: 40vh; min-height: 280px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 0.9rem; letter-spacing: 3px; }
+            .container { margin-top: -40px; margin-bottom: 40px; }
+            .quote-card { padding: 25px 15px; border-radius: 12px; }
+            
+            .header-info { flex-direction: column; text-align: center; gap: 15px; }
+            .header-info > div { width: 100%; }
+            .header-main h2 { font-size: 1.8rem; }
+            .date-box { text-align: center; display: block; width: 100%; }
+            
+            .section-title { font-size: 1.4rem; justify-content: center; text-align: center; flex-wrap: wrap; }
+            .includes-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 30px; }
+            .include-item { padding: 15px; flex-direction: column; text-align: center; align-items: center; }
+            .include-icon { margin-bottom: 5px; }
+            
+            /* Responsive Table Trick */
+            .pricing-table thead { display: none; }
+            .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+            .pricing-table tr { margin-bottom: 15px; border: 1px solid var(--beige); border-radius: 8px; overflow: hidden; }
+            .pricing-table td { text-align: right; padding: 12px 15px; border-bottom: 1px solid var(--beige); position: relative; padding-left: 50%; min-height: 45px; }
+            .pricing-table td::before { content: attr(data-label); position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-weight: 500; text-align: left; color: var(--gray-text); font-size: 0.85rem; text-transform: uppercase;}
+            .pricing-table td:last-child { border-bottom: none; }
+            
+            .pricing-table td:first-child { text-align: left; padding: 15px; text-align: center; }
+            .pricing-table td:first-child::before { display: none; }
+            .item-desc { margin-top: 8px; display: block; }
+            
+            .total-row { border: none !important; margin-bottom: 0; background: var(--background-light) !important; border-top: none; }
+            .total-row td { padding: 20px 15px !important; text-align: center; border-top: none; }
+            .total-row td:first-child { display: none; }
+            .total-row td.amount { font-size: 2rem; padding-left: 15px; }
+            .total-row td.amount::before { content: "Total Inversión (MXN)"; position: static; display: block; text-align: center; transform: none; color: var(--gray-text); font-size: 0.9rem; margin-bottom: 8px; font-family: 'Poppins', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;}
+            
+            .btn-primary { width: 100%; justify-content: center; font-size: 1.05rem; padding: 14px 20px; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Propuesta de Servicio</h1>
+            <p>Primavera Events Group</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="quote-card">
+            <!-- Header Info -->
+            <div class="header-info reveal">
+                <div class="header-main">
+                    <h2>Paquete Taquiza Premium XV Años</h2>
+                    <p>Atención: <strong>Sra. Sandra</strong></p>
+                    <span class="badge-people"><i class="fa-solid fa-user-group"></i> 80 Invitados</span>
+                </div>
+                <div class="date-box">
+                    <span>Fecha Sugerida</span>
+                    <strong>Sábado 20 de Junio</strong>
+                </div>
+            </div>
+
+            <!-- Includes Section -->
+            <h3 class="section-title reveal"><i class="fa-solid fa-spa"></i> ¿Qué incluye el servicio?</h3>
+            
+            <div class="includes-grid">
+                <div class="include-item reveal delay-1">
+                    <div class="include-icon"><i class="fa-solid fa-chair"></i></div>
+                    <div class="include-text">
+                        <h4>Mobiliario Completo</h4>
+                        <p>Mesa redonda o cuadrada con mantelería fina (mantel y cubre mantel) a su elección.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-2">
+                    <div class="include-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                    <div class="include-text">
+                        <h4>Menú de Carnes (Cortes o Tacos)</h4>
+                        <p>Variedad especial a elegir: Pastor, Bistec, Campechanos y Longaniza o Selección de Cortes.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-3">
+                    <div class="include-icon"><i class="fa-solid fa-wine-glass"></i></div>
+                    <div class="include-text">
+                        <h4>Loza y Bebidas</h4>
+                        <p>Uso de loza incluida y selección de bebidas: Refresco o Agua de sabor (servicio continuo).</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-4">
+                    <div class="include-icon"><i class="fa-solid fa-music"></i></div>
+                    <div class="include-text">
+                        <h4>Producción y Ambientación</h4>
+                        <p>Letras monumentales "XV", servicio de DJ profesional y pista de baile (5x5).</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-5">
+                    <div class="include-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="include-text">
+                        <h4>Servicio Profesional</h4>
+                        <p>Meseros capacitados y capitán de meseros para garantizar una atención excepcional.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-1">
+                    <div class="include-icon"><i class="fa-solid fa-crown"></i></div>
+                    <div class="include-text">
+                        <h4>Detalles Especiales</h4>
+                        <p>Montaje elegante para Mesa Principal y hermosos centros de mesa para invitados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <h3 class="section-title reveal"><i class="fa-solid fa-envelope-open-text"></i> Desglose de Inversión</h3>
+            
+            <div class="pricing-container reveal delay-2">
+                <div style="overflow-x: auto;">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Descripción del Servicio</th>
+                                <th>Personas</th>
+                                <th class="amount-head">Costo por Persona</th>
+                                <th class="amount-head">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Servicio">
+                                    <span class="item-title">Paquete Completo (Taquiza/Cortes + DJ + Pista + Mobiliario)</span>
+                                    <span class="item-desc">Incluye alimentos (Pastor, Bistec, Campechanos, Longaniza), DJ, Pista 5x5, Bebidas, Letras de XV, Mesa Principal, Centros de mesa y Personal.</span>
+                                </td>
+                                <td data-label="Personas">80</td>
+                                <td class="amount" data-label="Costo p/p">$590.00</td>
+                                <td class="amount" data-label="Subtotal">$47,200.00</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td colspan="3">Total Inversión (MXN)</td>
+                                <td class="amount">$47,200.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section reveal">
+                <p class="cta-text">"Hacemos realidad el evento de tus sueños con la elegancia que mereces."</p>
+                <a href="https://primaveraeventsgroup.com/richard-hernandez/" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    Confirmar Cotización <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="disclaimer">Al confirmar, serás redirigido a nuestro sitio oficial para reservar tu fecha y afinar detalles.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Primavera Events Group. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para animaciones OnScroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -40px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Opcional: Descomentar linea abajo si quieres que se animen solo la primera vez que aparecen
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
+</body>
+</html>
